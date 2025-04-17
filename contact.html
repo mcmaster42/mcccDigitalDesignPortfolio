@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gary Larson</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GL</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="extras.html">Extras</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contact-container">
+        <section class="contact-header">
+            <h1>Get In Touch</h1>
+            <p>Interested in commissioning a piece, discussing a project, or just want to say hello? Fill out the form below or reach out through one of my social channels!</p>
+        </section>
+        
+        <section class="contact-content">
+            <div class="contact-form-container">
+                <h2>Contact Form</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="commission">Commission Request</option>
+                            <option value="collab">Collaboration Proposal</option>
+                            <option value="question">General Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Other Ways to Connect</h2>
+                
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <p>gary.larson@example.com</p>
+                </div>
+                
+                <div class="contact-method">
+                    <h3>Social Media</h3>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">Behance</a></li>
+                        <li><a href="#" target="_blank">DeviantArt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="contact-method">
+                    <h3>Business Hours</h3>
+                    <p>I typically respond to messages within 48 hours, Monday through Friday.</p>
+                </div>
+                
+                <div class="contact-image">
+                    <img src="/api/placeholder/300/300" alt="Gary at drawing desk">
+                    <p class="image-caption">Me in my natural habitat</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>Do you accept commissions?</h3>
+                <p>Yes! I'm available for custom illustration work. Please use the contact form to describe your project.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What are your rates?</h3>
+                <p>Rates vary depending on complexity, usage rights, and timeline. I'll provide a quote after discussing your specific needs.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I use your artwork for my business?</h3>
+                <p>Commercial licensing is available for most of my work. Let's discuss your intended use to find the right arrangement.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you ship prints internationally?</h3>
+                <p>Yes, though shipping costs and delivery times vary by location.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Gary Larson Portfolio | A fictional student project</p>
+        <p><small>This portfolio is a fictional student project and is not affiliated with the real Gary Larson or The Far Side®</small></p>
+    </footer>
+</body>
+</html>
