@@ -15,7 +15,7 @@ driver_path = "/Users/ryanmcmaster/Documents/chromedriver-mac-x64/chromedriver"
 service = Service(driver_path)
 
 # Replace with the actual base URL of your site
-base_url = "https://mcmaster42.github.io/mcccDigitalDesignPortfolio/"
+base_url = "https://mcmaster42.github.io/mcccDigitalDesignPortfolio"
 pages = [
     "/",               # Home
     "/contact.html",
@@ -33,7 +33,7 @@ def simulate_visit():
     driver.get(url)
     
     # Wait 5-15 seconds like a human
-    time.sleep(random.randint(5, 15))
+    time.sleep(random.randint(3, 6))
     
     # Optionally: click a link
     links = driver.find_elements("tag name", "a")
@@ -44,9 +44,9 @@ def simulate_visit():
     driver.quit()
 
 # Run every 10–30 minutes, N times
-for i in range(75):  # Adjust to simulate X number of visits
+for i in range(50):  # Adjust to simulate X number of visits
     simulate_visit()
-    delay = random.randint(300, 600)  # wait 10–30 min
+    delay = random.randint(15, 30)  # wait 15 - 30 secondes
     print(f"Sleeping for {delay / 60:.1f} minutes...\n")
     time.sleep(delay)
 
